@@ -16,7 +16,8 @@
                 25,
                 26,
                 27,
-                28
+                28,
+                29
             ]
         }
     ],
@@ -333,9 +334,14 @@
                 -0.7071068286895752,
                 -1.1520232590100932e-07
             ],
+            "scale" : [
+                0.5,
+                0.5,
+                0.5
+            ],
             "translation" : [
-                -5.151664733886719,
-                4.167832851409912,
+                -5.3172807693481445,
+                4.261410713195801,
                 3.0487518310546875
             ]
         },
@@ -348,9 +354,34 @@
                 -0.7071068286895752,
                 -1.1520232590100932e-07
             ],
+            "scale" : [
+                0.5,
+                0.5,
+                0.5
+            ],
             "translation" : [
-                -3.3395214080810547,
-                4.167832851409912,
+                -3.157170295715332,
+                4.261410713195801,
+                3.0487518310546875
+            ]
+        },
+        {
+            "mesh" : 17,
+            "name" : "InnerJourneyButton",
+            "rotation" : [
+                0,
+                0.7071068286895752,
+                -0.7071068286895752,
+                -1.1520232590100932e-07
+            ],
+            "scale" : [
+                0.5,
+                0.699999988079071,
+                0.5
+            ],
+            "translation" : [
+                -4.237170219421387,
+                4.261410713195801,
                 3.0487518310546875
             ]
         }
@@ -639,6 +670,26 @@
                 "metallicFactor" : 0,
                 "roughnessFactor" : 0.5
             }
+        },
+        {
+            "alphaMode" : "BLEND",
+            "doubleSided" : true,
+            "emissiveFactor" : [
+                1,
+                1,
+                1
+            ],
+            "emissiveTexture" : {
+                "index" : 29
+            },
+            "name" : "InnerJourneyButton",
+            "pbrMetallicRoughness" : {
+                "baseColorTexture" : {
+                    "index" : 30
+                },
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.5
+            }
         }
     ],
     "meshes" : [
@@ -916,6 +967,20 @@
                     "material" : 18
                 }
             ]
+        },
+        {
+            "name" : "InnerJourneyButton",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 91,
+                        "NORMAL" : 92,
+                        "TEXCOORD_0" : 93
+                    },
+                    "indices" : 66,
+                    "material" : 19
+                }
+            ]
         }
     ],
     "textures" : [
@@ -1034,6 +1099,14 @@
         {
             "sampler" : 1,
             "source" : 22
+        },
+        {
+            "sampler" : 1,
+            "source" : 23
+        },
+        {
+            "sampler" : 1,
+            "source" : 23
         }
     ],
     "images" : [
@@ -1139,8 +1212,8 @@
         },
         {
             "mimeType" : "image/png",
-            "name" : "MeditationInstructionsButton",
-            "uri" : "textures/MeditationInstructionsButton.png"
+            "name" : "BenefitsOfMeditationButton",
+            "uri" : "textures/BenefitsOfMeditationButton.png"
         },
         {
             "mimeType" : "image/png",
@@ -1151,6 +1224,11 @@
             "mimeType" : "image/png",
             "name" : "MastersMessageButton",
             "uri" : "textures/MastersMessageButton.png"
+        },
+        {
+            "mimeType" : "image/png",
+            "name" : "InnerJourneyEndingButton",
+            "uri" : "textures/InnerJourneyEndingButton.png"
         }
     ],
     "accessors" : [
@@ -1889,6 +1967,34 @@
             "componentType" : 5126,
             "count" : 4,
             "type" : "VEC2"
+        },
+        {
+            "bufferView" : 91,
+            "componentType" : 5126,
+            "count" : 4,
+            "max" : [
+                0.8888888955116272,
+                0,
+                0.5
+            ],
+            "min" : [
+                -0.8888888955116272,
+                0,
+                -0.5
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 92,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 93,
+            "componentType" : 5126,
+            "count" : 4,
+            "type" : "VEC2"
         }
     ],
     "bufferViews" : [
@@ -2346,6 +2452,21 @@
             "buffer" : 0,
             "byteLength" : 32,
             "byteOffset" : 1062724
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1062756
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 48,
+            "byteOffset" : 1062804
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 32,
+            "byteOffset" : 1062852
         }
     ],
     "samplers" : [
@@ -2362,7 +2483,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 1062756,
+            "byteLength" : 1062884,
             "uri" : "concluding-gallery.bin"
         }
     ]
